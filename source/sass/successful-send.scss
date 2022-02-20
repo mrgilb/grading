@@ -1,0 +1,49 @@
+.successful-send {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  position: relative;
+  display: none;
+
+  &--active {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    background-color: #FBF8F8;
+    height: 100%;
+    width: 100%;
+  }
+
+  @media(min-width: 768px) {
+    width: 720px;
+    min-height: 444px;
+    height: auto;
+    top: calc(50% - 222px);
+    right: calc(50% - 360px);
+  }
+}
+
+
+.successful-send__close-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: none;
+  background-color: transparent;
+  background-image: url('../img/icons/cross-close.svg');
+  background-size: 22px 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+}

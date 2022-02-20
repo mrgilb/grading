@@ -1,297 +1,465 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
-  <title>Барбершоп «Бородинский»</title>
+  <title>Путешествие по Европе</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff" as="font">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff" as="font">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font">
 </head>
-<body class="page__body">
 
-<header class="page-header">
-  <a class="page-header__logo">
-    <picture>
-      <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-      <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
-      <img src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинский»">
-    </picture>
-  </a>
-  <nav class="main-nav main-nav--closed main-nav--nojs">
-    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a>
-            Главная
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="photo.html">
-            Наши работы
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html">
-            Записаться
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">
-            Контакты
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="#">
-            HTML Academy
-          </a>
-        </li>
+<body class="page-body">
+
+  <header class="page-header">
+    <a class="logo" href="#">
+      <img src="./img/icons/logo.svg" width="44" height="17" alt="logo">
+    </a>
+    <nav class="nav">
+      <button class="button nav__button nav__button--nojs">
+        <span class="nav__cross"></span>
+      </button>
+      <ul class="nav__list nav__list--nojs">
+        <li class="nav__item"><a class="nav__link" href="#place-of-visit">О путешествии</a></li>
+        <li class="nav__item"><a class="nav__link" href="#price">Цены</a></li>
+        <li class="nav__item nav__tel"><a href="tel:+749978468446">
+          <svg width="30" height="30">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+          +7 (499) -784-684-46</a></li>
       </ul>
-      <ul class="main-nav__list user-list">
-        <li class="user-list__item">
-          <a class="user-list__login js-login" href="login.html">
-            <svg class="user-list__login-icon" width="16" height="16">
-              <use xlink:href="img/sprite.svg#login"></use>
-            </svg>
-            Войти
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
-
-<main class="page-main">
-
-  <h1 class="visually-hidden">Барбершоп «Бородинский» — истинно мужская классика</h1>
-
-  <section class="stats">
-    <div class="stats__wrapper">
-      <header class="stats__header">
-        <h2 class="visually-hidden">
-          Статистика Барбершопа
-        </h2>
-        <p class="stats__slogan">
-          Стрижка у нас<br>
-          это выгодно!
-        </p>
-        <p class="stats__intro">
-          Мужская стрижка требует<br>
-          точного подхода. Обратимся<br>
-          к статистике:
-        </p>
-        <p class="stats__legend stats__legend--top">
-          <small>
-            * — приведённые данные ложь
-          </small>
-        </p>
-      </header>
-      <dl class="stats__list">
-        <div class="stats__item">
-          <dt class="stats__number">
-            1 500<sup>*</sup>
-          </dt>
-          <dd class="stats__description">
-            рублей<br>
-            вложений
-          </dd>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="about">
+      <div class="about__background">
+        <div class="about__background-container">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./img/backgtound-about-desktop.webp 1x, ./img/backgtound-about-desktop@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="./img/backgtound-about-desktop.png 1x, ./img/backgtound-about-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="./img/backgtound-about-tablet.webp 1x, ./img/backgtound-about-tablet@2x.webp 2x">
+            <source media="(min-width: 768px)" srcset="./img/backgtound-about-tablet.png 1x, ./img/backgtound-about-tablet@2x.png 2x">
+            <source type="image/webp" srcset="./img/backgtound-about.webp 1x, ./img/backgtound-about@2x.webp 2x">
+            <img class="about__background-iamge" src="./img/backgtound-about.png" width="320" height="235" srcset="./img/albania-desktop@2x.png 2x" alt="фон">
+          </picture>
         </div>
-        <div class="stats__item">
-          <dt class="stats__number">
-            7 200
-          </dt>
-          <dd class="stats__description">
-            секунд<br>
-            времени мастера
-          </dd>
+        <div class="about__content-container">
+          <h1 class="about__title">Путешествие <br class="about__br-desktop"> по <br class="about__br-mobile"> Европе</h1>
+          <p class="about__description">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также
+            потрясающая красота природы.</p>
+          <a class="button about__button" href="#tabs">смотреть тур</a>
         </div>
-        <div class="stats__item">
-          <dt class="stats__number">
-            90 000
-          </dt>
-          <dd class="stats__description">
-            постриженных<br>
-            волос
-          </dd>
-        </div>
-        <div class="stats__item">
-          <dt class="stats__number">
-            500 000<sup>*</sup>
-          </dt>
-          <dd class="stats__description">
-            рублей<br>
-            вложений
-          </dd>
-        </div>
-      </dl>
-      <small class="stats__legend stats__legend--bottom">
-        * — приведённые данные ложь
-      </small>
-    </div>
-  </section>
-
-  <section class="advantages">
-    <div class="advantages__wrapper slider">
-      <h2 class="visually-hidden">Наши преимущества</h2>
-      <ul class="advantages__list slider__list">
-        <li class="advantages__item advantages__item--fast slider__item">
-          <h3 class="advantages__title">Быстро</h3>
-          <p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки.</p>
-        </li>
-        <li class="advantages__item advantages__item--cool slider__item">
-          <h3 class="advantages__title">Круто</h3>
-          <p class="advantages__description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
-        </li>
-        <li class="advantages__item advantages__item--price slider__item">
-          <h3 class="advantages__title">Дорого</h3>
-          <p class="advantages__description">Наши мастера — профессионалы своего дела и не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
-        </li>
-      </ul>
-      <p class="advantages__toggles slider__toggles">
-        <button class="slider__toggle slider__toggle--current" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
-      </p>
-    </div>
-  </section>
-
-  <section class="news">
-    <div class="news__wrapper">
-      <h2 class="news__title">Новости и акции</h2>
-      <div class="news__list">
-        <a class="news__item" href="#">
-          <time class="news__date" datetime="2017-09-29">
-            <b class="news__day">29</b> сент
-          </time>
-          <p class="news__text">Нам наконец-то завезли Егермейстер! Теперь вы можете пропустить стаканчик во время стрижки.</p>
-        </a>
-        <a class="news__item" href="#">
-          <time class="news__date" datetime="2017-09-19">
-            <b class="news__day">19</b> сент
-          </time>
-          <p class="news__text">В нашей команде пополнение, Борис «Бритва» Стригунец пополнил наши стройные ряды. Спешите записаться!</p>
-        </a>
-        <a class="news__item" href="#">
-          <time class="news__date" datetime="2017-09-09">
-            <b class="news__day">9</b> сент
-          </time>
-          <p class="news__text">Всё дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чём здесь подвох!</p>
-        </a>
       </div>
-      <a class="news__to-all button" href="#">Показать все</a>
-    </div>
-  </section>
+    </section>
+    <div class="background-desktop">
+      <section class="catalog">
+        <h2 id="place-of-visit" class="catalog__title">Места <br> посещения</h2>
+        <p class="catalog__description">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
+        <ul class="catalog__list">
+          <li class="catalog__item" tabindex="0">
+            <div class="catalog__link-container">
+              <a class="catalog__link greece" href="#greece">
+                смотреть подробнее
+              </a>
+            </div>
+            <div class="catalog__image">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./img/greece-desktop.webp 1x, ./img/greece-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="./img/greece.webp 1x, ./img/greece@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="./img/greece-desktop.png 1x, ./img/greece-desktop@2x.png 2x">
+                <img class="catalog__image" src="./img/greece.png" srcset="./img/greece@2x.png 2x" width="288" height="425"
+                  alt="Изображение места тура">
+              </picture>
+            </div>
+            <h3 class="catalog__title-product">Греция</h3>
 
-  <section class="reviews">
-    <div class="reviews__wrapper slider">
-      <h2 class="reviews__title">Отзывы о нас</h2>
-      <a class="reviews__write button" href="form.html">Оставить свой</a>
-      <div class="reviews__list slider__list">
-        <blockquote class="reviews__item slider__item">
-          <picture class="reviews__author-picture">
-            <source media="(min-width: 1200px)" srcset="img/picture-travis-desktop@1x.jpg 1x">
-            <source media="(min-width: 768px)" srcset="img/picture-travis-tablet@1x.jpg 1x">
-            <img class="reviews__author-image" src="img/picture-travis-mobile@1x.jpg" width="50" height="33" alt="Фото Трэвиса Баркера">
-          </picture>
-          <div class="reviews__author-info">
-            <cite class="reviews__author-name">Трэвис Баркер</cite>
-            <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+          </li>
+          <li class="catalog__item" tabindex="0">
+            <div class="catalog__link-container">
+              <a class="catalog__link albania" href="#albania">
+                смотреть подробнее
+              </a>
+            </div>
+            <div class="catalog__image">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./img/albania-desktop.webp 1x, ./img/albania-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="./img/albania.webp 1x, ./img/albania@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="./img/albania-desktop.png 1x, ./img/albania-desktop@2x.png 2x">
+                <img class="catalog__image" src="./img/albania.png" srcset="./img/albania@2x.png 2x" width="288" height="425"
+                  alt="Изображение места тура">
+              </picture>
+            </div>
+            <h3 class="catalog__title-product">Албания</h3>
+
+          </li>
+          <li class="catalog__item" tabindex="0">
+            <div class="catalog__link-container">
+              <a class="catalog__link macedonia" href="#macedonia">
+                смотреть подробнее
+              </a>
+            </div>
+            <div class="catalog__image">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./img/macedonia-desktop.webp 1x, ./img/macedonia-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="./img/macedonia.webp 1x, ./img/macedonia@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="./img/macedonia-desktop.png 1x, ./img/macedonia-desktop@2x.png 2x">
+                <img class="catalog__image" src="./img/macedonia.png" srcset="./img/macedonia@2x.png 2x" width="288" height="425"
+                  alt="Изображение места тура">
+              </picture>
+            </div>
+            <h3 class="catalog__title-product">Македония</h3>
+
+          </li>
+          <li class="catalog__item" tabindex="0">
+            <div class="catalog__link-container">
+              <a class="catalog__link montenegro" href="#montenegro">
+                смотреть подробнее
+              </a>
+            </div>
+            <div class="catalog__image">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./img/montenegro-desktop.webp 1x, ./img/montenegro-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="./img/montenegro.webp 1x, ./img/montenegro@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="./img/montenegro-desktop.png 1x, ./img/montenegro-desktop@2x.png 2x">
+                <img class="catalog__image" src="./img/montenegro.png" srcset="./img/montenegro@2x.png 2x" width="288" height="425"
+                  alt="Изображение места тура">
+              </picture>
+            </div>
+            <h3 class="catalog__title-product">Черногория</h3>
+
+          </li>
+          <li class="catalog__item" tabindex="0">
+            <div class="catalog__link-container">
+              <a class="catalog__link croatia" href="#croatia">
+                смотреть подробнее
+              </a>
+            </div>
+            <div class="catalog__image">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="./img/croatia-desktop.webp 1x, ./img/croatia-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="./img/croatia.webp 1x, ./img/croatia@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="./img/croatia-desktop.png 1x, ./img/croatia-desktop@2x.png 2x">
+                <img class="catalog__image" src="./img/croatia.png" srcset="./img/croatia@2x.png 2x" width="288" height="425"
+                  alt="Изображение места тура">
+              </picture>
+            </div>
+            <h3 class="catalog__title-product">Хорватия</h3>
+
+          </li>
+        </ul>
+        <div class="tabs" id="tabs">
+          <div class="tabs__container tabs__container--nojs">
+            <ul class="tabs__list">
+              <li class="tabs__item"><button class="tabs__button tabs__button--active greece">Греция</button></li>
+              <li class="tabs__item"><button class="tabs__button albania" >Албания</button></li>
+              <li class="tabs__item"><button class="tabs__button macedonia" >Македония</button></li>
+              <li class="tabs__item"><button class="tabs__button montenegro" >Черногория</button></li>
+              <li class="tabs__item"><button class="tabs__button croatia" >Хорватия</button></li>
+            </ul>
           </div>
-        </blockquote>
-        <blockquote class="reviews__item slider__item">
-          <picture class="reviews__author-picture">
-            <source media="(min-width: 1200px)" srcset="img/picture-travis-desktop@1x.jpg 1x">
-            <source media="(min-width: 768px)" srcset="img/picture-travis-tablet@1x.jpg 1x">
-            <img class="reviews__author-image" src="img/picture-travis-mobile@1x.jpg" width="50" height="33" alt="Фото Джона Смита">
-          </picture>
-          <div class="reviews__author-info">
-            <cite class="reviews__author-name">Джон Смит</cite>
-            <p class="reviews__text">Отличную стрижку мне сделали ребята.</p>
+          <div class="tabs__data tabs__data--nojs tabs__data--active greece" id="greece">
+            <div class="tabs__content">
+              <h3>Греция</h3>
+              <p class="tabs__desc">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на
+                вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная
+                цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих
+                в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.
+              </p>
+              <button class="tabs__button-buy button">купить тур сейчас</button>
+            </div>
+            <div class="tabs__comments">
+              <div class="tabs__container-background">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="./img/greece-tabs-background.webp 1x, ./img/greece-tabs-background@2x.webp 2x">
+                  <source media="(min-width: 1440px)" srcset="./img/greece-tabs-background.png 1x, ./img/greece-tabs-background@2x.png 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/greece-background-reviews-tablet.webp 1x, ./img/greece-background-reviews-tablet@2x.webp 2x">
+                  <source media="(min-width: 768px)" srcset="./img/greece-background-reviews-tablet.png 1x, ./img/greece-background-reviews-tablet@2x.png 2x">
+                  <source type="image/webp" srcset="./img/greece-background-reviews.webp 1x, ./img/greece-background-reviews@2x.webp 2x">
+                  <img class="tabs__background" src="./img/greece-background-reviews.png" srcset="./img/greece-background-reviews@2x.png 2x" alt="Фон отзыва" width="320" height="415">
+                </picture>
+              </div>
+              <div class="tabs__comment-container">
+                <h3 class="tabs__comments-title">Отзывы</h3>
+                <p class="tabs__comments-content">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же
+                  высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто
+                  стоишь на краю света!</p>
+                <div class="tabs__comments-avatar">
+                  <div>
+                    <picture>
+                      <source type="image/webp" srcset="./img/vlada.webp 1x, ./img/vlada@2x.webp 2x">
+                      <img src="./img/vlada.png" srcset="./img/vlada@2x.png 2x" width="37" height="38" alt="Аватар">
+                    </picture>
+                  </div>
+                  <span>Влада Голицина</span>
+                </div>
+              </div>
+            </div>
           </div>
-        </blockquote>
-        <blockquote class="reviews__item slider__item">
-          <picture class="reviews__author-picture">
-            <source media="(min-width: 1200px)" srcset="img/picture-travis-desktop@1x.jpg 1x">
-            <source media="(min-width: 768px)" srcset="img/picture-travis-tablet@1x.jpg 1x">
-            <img class="reviews__author-image" src="img/picture-travis-mobile@1x.jpg" width="50" height="33" alt="Фото Ивана Бородайло">
-          </picture>
-          <div class="reviews__author-info">
-            <cite class="reviews__author-name">Иван Бородайло</cite>
-            <p class="reviews__text">В Бородинском ваша борода в надёжных руках!</p>
+          <div class="tabs__data tabs__data--nojs  albania" id="albania">
+            <div class="tabs__content">
+              <h3>Албания</h3>
+              <p class="tabs__desc">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.
+              </p>
+              <a class="tabs__button-buy button" href="formbuy.html">купить тур сейчас</a>
+            </div>
+            <div class="tabs__comments">
+              <div class="tabs__container-background">
+                <picture>
+                  <source type="image/webp" srcset="./img/albania.webp 1x, ./img/albania@2x.webp 2x">
+                  <img class="tabs__background" src="./img/albania.png" srcset="./img/albania@2x.png 2x" alt="Фон отзыва" width="320" height="415">
+                </picture>
+              </div>
+              <div class="tabs__comment-container">
+                <h3 class="tabs__comments-title">Отзывы</h3>
+                <p class="tabs__comments-content">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
+                <div class="tabs__comments-avatar">
+                  <div>
+                    <picture>
+                      <source type="image/webp" srcset="./img/marishka.webp 1x, ./img/marishka@2x.webp 2x">
+                      <img src="./img/marishka.png" srcset="./img/marishka@2x.png 2x" width="37" height="38" alt="Аватар">
+                    </picture>
+                  </div>
+                  <span>Маришка</span>
+                </div>
+              </div>
+            </div>
           </div>
-        </blockquote>
-        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-        <button class="reviews__next" type="button">Следующий отзыв</button>
+          <div class="tabs__data tabs__data--nojs  montenegro" id="montenegro">
+            <div class="tabs__content">
+              <h3>Черногория</h3>
+              <p class="tabs__desc">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.
+              </p>
+              <button class="tabs__button-buy button">купить тур сейчас</button>
+            </div>
+            <div class="tabs__comments">
+              <div class="tabs__container-background">
+                <picture>
+                  <source type="image/webp" srcset="./img/montenegro.webp 1x, ./img/montenegro@2x.webp 2x">
+                  <img class="tabs__background" src="./img/montenegro.png" srcset="./img/montenegro@2x.png 2x" alt="Фон отзыва" width="320" height="415">
+                </picture>
+              </div>
+              <div class="tabs__comment-container">
+                <h3 class="tabs__comments-title">Отзывы</h3>
+                <p class="tabs__comments-content">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую</p>
+                <div class="tabs__comments-avatar">
+                  <div>
+                    <picture>
+                      <source type="image/webp" srcset="./img/nastya.webp 1x, ./img/nastya@2x.webp 2x">
+                      <img src="./img/nastya.png" srcset="./img/nastya@2x.png 2x" width="37" height="38" alt="Аватар">
+                    </picture>
+                  </div>
+                  <span>Анастасия Мей</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__data tabs__data--nojs  macedonia" id="macedonia">
+            <div class="tabs__content">
+              <h3>Македония</h3>
+              <p class="tabs__desc">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.
+              </p>
+              <button class="tabs__button-buy button">купить тур сейчас</button>
+            </div>
+            <div class="tabs__comments">
+              <div class="tabs__container-background">
+                <picture>
+                  <source type="image/webp" srcset="./img/macedonia.webp 1x, ./img/macedonia@2x.webp 2x">
+                  <img class="tabs__background" src="./img/macedonia.png" srcset="./img/macedonia@2x.png 2x" alt="Фон отзыва" width="320" height="415">
+                </picture>
+              </div>
+              <div class="tabs__comment-container">
+                <h3 class="tabs__comments-title">Отзывы</h3>
+                <p class="tabs__comments-content">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.</p>
+                <div class="tabs__comments-avatar">
+                  <div>
+                    <picture>
+                      <source type="image/webp" srcset="./img/michael.webp 1x, ./img/michael@2x.webp 2x">
+                      <img src="./img/michael.png" srcset="./img/michael@2x.png 2x" width="37" height="38" alt="Аватар">
+                    </picture>
+                  </div>
+                  <span>Михаил Кузьмин</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__data tabs__data--nojs  croatia" id="croatia">
+            <div class="tabs__content">
+              <h3>Хорватия</h3>
+              <p class="tabs__desc">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.
+              </p>
+              <button class="tabs__button-buy button">купить тур сейчас</button>
+            </div>
+            <div class="tabs__comments">
+              <div class="tabs__container-background">
+                <picture>
+                  <source type="image/webp" srcset="./img/croatia.webp 1x, ./img/croatia@2x.webp 2x">
+                  <img class="tabs__background" src="./img/croatia.png" srcset="./img/croatia@2x.png 2x" alt="Фон отзыва" width="320" height="415">
+                </picture>
+              </div>
+              <div class="tabs__comment-container">
+                <h3 class="tabs__comments-title">Отзывы</h3>
+                <p class="tabs__comments-content">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)</p>
+                <div class="tabs__comments-avatar">
+                  <div>
+                    <picture>
+                      <source type="image/webp" srcset="./img/vladimir.webp 1x, ./img/vladimir@2x.webp 2x">
+                      <img src="./img/vladimir.png" srcset="./img/vladimir@2x.png 2x" width="37" height="38" alt="Аватар">
+                    </picture>
+                  </div>
+                  <span>Владимир Мулицин</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="promo">
+        <div class="promo__pice-container">
+          <h2 class="promo__title" id="price">Цены</h2>
+          <p class="promo__desc">Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших
+            потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%! </p>
+          <span class="promo__contacts">
+            Свяжитесь с нами
+            <a href="tel:+749978468446">
+              <svg width="30" height="30">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+              +7 (499) -784-684-46</a>
+          </span>
+        </div>
+        <ul class="promo__list">
+          <li class="promo__item" tabindex="0">
+            <h3>Комплексный</h3>
+            <span>$1999</span>
+            <p>Ознакомьтесь с перечнем того, что входит в данный пакет </p>
+            <ul class="promo__submenu">
+              <li class="promo__submenu-item">Разработанный маршрут с гидом группы</li>
+              <li class="promo__submenu-item">Перелет, трансфер и проживание в отелях</li>
+              <li class="promo__submenu-item">Завтраки, ужины в отелях и ланчи на природе</li>
+              <li class="promo__submenu-item">Экскурсии по удивительно красивым местам Европы</li>
+            </ul>
+            <a class="button promo__button" href="formbuy.html">купить тур сейчас</a>
+          </li>
+          <li class="promo__item" tabindex="0">
+            <h3>Экономный</h3>
+            <span>$1399</span>
+            <p>Ознакомьтесь с перечнем того, что входит в данный пакет </p>
+            <ul class="promo__submenu">
+              <li class="promo__submenu-item">Разработанный маршрут с гидом группы</li>
+              <li class="promo__submenu-item">Перелет и трансфер</li>
+              <li class="promo__submenu-item">Проживание в хостелах при отелях</li>
+              <li class="promo__submenu-item">Только завтраки в отелях</li>
+              <li class="promo__submenu-item">Экскурсии по удивительно красивым местам Европы</li>
+            </ul>
+            <a class="button promo__button" href="formbuy.html">купить тур сейчас</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <section class="feedback">
+      <div class="feedback__background">
+        <picture>
+          <source type="image/webp" srcset="./img/feedback-background.webp 1x, ./img/feedback-background@2x.webp 2x">
+          <img src="./img/feedback-background.png" srcset="./img/feedback-background@2x.png 2x" width="768" height="455" alt="фон">
+        </picture>
       </div>
-      <p class="reviews__toggles slider__toggles">
-        <button class="slider__toggle slider__toggle--current" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
-      </p>
-    </div>
-  </section>
-
-</main>
-
-<footer class="page-footer">
-  <div class="page-footer__wrapper">
-    <div class="page-footer__contacts contacts">
-      <b class="contacts__title">Барбершоп «Бородинский»</b>
-      <p class="contacts__text">
-        г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
-        <a class="contacts__phone" href="tel:+78125556666">
-          <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
-        </a>
-      </p>
-    </div>
-    <div class="page-footer__social social">
-      <b class="social__title">Давайте дружить!</b>
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+      <form action="questions.html" class="feedback__form">
+        <p class="feedback__title">У Вас остались вопросы?</p>
+        <p class="feedback__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+        <label class="feedback__tel">
+          <input  type="tel" name="tel" placeholder=" +7  Введите 10 цифр номера">
+        </label>
+        <label>
+          <input type="email" name="email" placeholder="E-mail">
+        </label>
+        <button class="feedback__button button">отправить</button>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <section class="future-goods">
+      <h2 class="future-goods__title">Следующие путешествия</h2>
+      <ul class="future-goods__menu">
+        <li>
+          <ul class="future-goods__submenu">
+            <li>Марсель</li>
+            <li>Ним</li>
+            <li>Монпелье</li>
+            <li>Барселона</li>
+            <li>Пальма</li>
+          </ul>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        <li>
+          <ul class="future-goods__submenu">
+            <li>Сардиния</li>
+            <li>Палермо</li>
+            <li>Катания</li>
+            <li>Неаполь</li>
+            <li>Рим</li>
+          </ul>
         </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+        <li>
+          <ul class="future-goods__submenu">
+            <li>Корс</li>
+            <li>Ницца</li>
+            <li>Монако</li>
+            <li>Динь-ле-Бен</li>
+            <li>Гренобль</li>
+          </ul>
         </li>
       </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано:</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-    </div>
-  </div>
-</footer>
+    </section>
+    <section class="contacts">
+      <h3>Наши контакты</h3>
+      <a class="contacts__email" href="mailto:puteshestviemechta@gmail.ru">
+        <svg width="26" height="20">
+          <use xlink:href="img/sprite.svg#email"></use>
+        </svg>
+        puteshestviemechta@gmail.ru</a>
+      <a class="contacts__tel" href="tel:+749978468446">
+        <svg width="30" height="30">
+          <use xlink:href="img/sprite.svg#phone"></use>
+        </svg>
+        +7 (499) -784-684-46</a>
+    </section>
+    <section class="corp-offer">
+      <h2 class="corp-offer__title">Корпоративные путешествия</h2>
+      <p class="corp-offer__desc">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры
+        очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением
+      </p>
+    </section>
 
-<section class="modal">
-  <h2>Личный кабинет</h2>
-  <p class="modal__description">Введите свой логин и пароль, чтобы войти</p>
-  <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-    <p>
-      <label class="visually-hidden" for="user-login">Логин</label>
-      <input class="modal__input modal__input--icon-user" id="user-login" type="text" name="login" placeholder="Логин">
-    </p>
-    <p>
-      <label class="visually-hidden" for="user-password">Пароль</label>
-      <input class=" modal__input modal__input--icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
-    </p>
-    <p class="modal__help">
-      <label class="modal__help-checkbox">
-        <input type="checkbox" name="remember" class="visually-hidden">
-        <span class="modal__help-indicator"></span>
-        Запомните меня
+  </footer>
+
+  <section class="popup">
+    <button class="popup__button-close" aria-label="Закрыть">
+    </button>
+    <form class="popup__form" action="buy-tour.html">
+      <h3 class="popup__title">Купить тур </h3>
+      <label class="popup__tel">
+        <input  type="tel" name="tel" placeholder=" +7 Введите 10 цифр номера">
       </label>
-      <a class="modal__restore" href="#">Я забыл пароль!</a>
-    </p>
-    <div class="modal__buttons">
-      <button class="modal__button button" type="submit">Войти</button>
-      <button class="modal__button modal__button--close" type="button">Закрыть</button>
-    </div>
-  </form>
-</section>
+      <label>
+        <input type="email" name="email" placeholder="E-mail">
+      </label>
+      <button class="popup__button button">отправить</button>
+    </form>
+  </section>
+  <section class="successful-send">
+    <button class="successful-send__close-button">
+    </button>
+    <p>Форма успешно отправлена, спасибо! :)</p>
+  </section>
 
-<script src="js/script.min.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
+
 </html>

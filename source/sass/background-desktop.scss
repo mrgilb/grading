@@ -1,0 +1,14 @@
+.background-desktop {
+  @media(min-width: 1440px) {
+    width: 1440px;
+    margin: 0 auto;
+    background-image: url('../img/background-map.png');
+
+    @media(min-resolution: 2dppx) {
+      background-image: url('../img/background-map@2x.png');
+    }
+    background-repeat: no-repeat;
+    background-size: 1444px auto;
+    background-position: 0 1600px;
+  }
+};

@@ -1,0 +1,22 @@
+.button {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  box-shadow: none;
+  display: block;
+  outline: none;
+  background-color: #FE7865;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #F17D4B;
+  }
+
+  &:focus {
+    background-color: #F17D4B;
+  }
+
+  &--active {
+    background-color: #F17D4B;
+  }
+}

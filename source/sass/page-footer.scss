@@ -1,0 +1,16 @@
+.page-footer {
+  @media(min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 21px;
+    margin-top: 75px;
+  }
+
+  @media(min-width: 1440px) {
+    width: 1170px;
+    margin: 0 auto;
+    margin-top: 160px;
+    gap: 57px;
+  }
+};
