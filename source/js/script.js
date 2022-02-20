@@ -81,12 +81,17 @@ const closePopup = popup.querySelector('.popup__button-close');
 const successfulPopup = document.querySelector('.successful-send');
 const closeButtonSuccessfulPopup = successfulPopup.querySelector('.successful-send__close-button');
 
+
 const isEscapeKey = (event) => event.key === 'Escape'
 
 const onClickSendPopup = (event) => {
   event.preventDefault();
   popup.classList.remove('popup--active');
   successfulPopup.classList.add('successful-send--active');
+  setTimeout(()=> {
+    successfulPopup.classList.remove('successful-send--active');
+    body.style.overflow = "auto";
+  }, 2000)
 }
 
 
@@ -100,13 +105,14 @@ closeButtonSuccessfulPopup.addEventListener('click',onClickCloseSuccessfulPopup)
 
 sendButtonPopup.addEventListener('click', onClickSendPopup);
 
-const onKeydown = (event)=> {
+const onKeydownClosePopup = (event)=> {
   if(isEscapeKey(event)) {
     popup.classList.remove('popup--active');
   }
 }
 
-document.addEventListener('keydown', onKeydown);
+
+document.addEventListener('keydown', onKeydownClosePopup);
 
 const onClickOpenPopup = (event) => {
   if(event.target.matches('.tabs__button-buy') || event.target.matches('.promo__button')) {
@@ -124,7 +130,7 @@ const onClickClose = (event) => {
   }
 }
 
-const onClickOverlay = (event) => {
+const onClickOverlayClosePopup = (event) => {
   const composedPath = event.composedPath().includes(popup);
 
   if(!composedPath) {
@@ -133,10 +139,11 @@ const onClickOverlay = (event) => {
   }
 }
 
-document.addEventListener('click', onClickOverlay)
 
+
+document.addEventListener('click', onClickOverlayClosePopup);
 document.addEventListener('click', onClickOpenPopup);
-closePopup.addEventListener('click', onClickClose);
 
+closePopup.addEventListener('click', onClickClose);
 catalogLinks.addEventListener('click', onCliclLink);
 tabsContainer.addEventListener('click', onClickTab);

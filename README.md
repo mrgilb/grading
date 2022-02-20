@@ -17,3 +17,6 @@
 - Собрать стили: `npm run styles`
 - Собрать скрипты: `npm run scripts`
 
+## Доп инфо
+- https://github.com/mrgilb/grading : ссылка на github
+- Затрачено: 24 часа
